@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .col-md-4 {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .card img {
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        .card-text {
+            color: #555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://merriam-webster.com/assets/mwu/static/MWUnabridged_headerimage.png" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Title 1</h5>
+                        <p class="card-text">Description for Image 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://merriam-webster.com/assets/mwu/static/MWUnabridged_headerimage.png" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Title 2</h5>
+                        <p class="card-text">Description for Image 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://merriam-webster.com/assets/mwu/static/MWUnabridged_headerimage.png" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Title 3</h5>
+                        <p class="card-text">Description for Image 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
